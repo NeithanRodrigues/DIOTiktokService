@@ -32,13 +32,18 @@ dependencies {
     implementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
     implementation 'org.postgresql:postgresql:42.7.3'
-
 }
 
 dependencyManagement {
     imports {
         mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
     }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    sourceCompatibility = '21'
+    targetCompatibility = '21'
 }
 
 tasks.jar {
