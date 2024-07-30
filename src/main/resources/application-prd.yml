@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://roundhouse.proxy.rlwy.net:43402/railway
+    username: postgres
+    password: ZoabzTPACVAVoWVmRdoZxxhndCPsEPPg
+  jpa:
+    hibernate:
+      ddl-auto: validate
